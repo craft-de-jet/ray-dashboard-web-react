@@ -1,0 +1,57 @@
+{
+  "name": "dashboard",
+  "version": "0.1.0",
+  "private": true,
+  "license": "SEE LICENSE IN LICENSE file",
+  "description": "dashboard ui react",
+  "author": {
+    "name": "cdj",
+    "email": "craft-de-jet@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/craft-de-jet/dashboard-ui-react.git"
+  },
+  "dependencies": {
+    "classnames": "^2.2.6",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0",
+    "react-router-dom": "^4.3.1",
+    "reactstrap": "^8.0.1",
+    "chart.js": "^2.8.0",
+    "react-infinite-calendar": "^2.3.1",
+    "react-notification-system": "^0.2.17",
+    "react-chartjs-2": "^2.7.6",
+    "react-icons": "^3.7.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "node-sass": "^4.12.0",
+    "react-icons": "^3.7.0",
+    "react-scripts": "3.1.1"
+  },
+  "resolutions": {
+    "react-router-dom": "^4.3.1",
+    "react-router": "^4.3.1"
+  }
+}
