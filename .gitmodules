@@ -1,0 +1,6 @@
+[submodule "kdm-components"]
+	path = libs/kdm-components
+	url = git@github.com:craft-de-jet/kdm-components-web-react.git
+[submodule "kdm-styles"]
+	path = libs/kdm-styles
+	url = git@github.com:craft-de-jet/kdm-styles-basic.git
