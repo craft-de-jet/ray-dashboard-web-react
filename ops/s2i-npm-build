@@ -1,0 +1,29 @@
+#!/bin/bash
+
+echo "----> ray: installing kdm-components dependencies"
+pushd ./libs/kdm-components
+	if [ -d node_modules ]; then
+		rm -rf node_modules
+	fi
+	npm i
+	#npm run-script build
+	# HACK: run in background, then docker will not wait for it
+	# TODO: component should be accessible from parent module
+	npm start &
+popd
+
+echo "----> ray: installing kdm-styles dependencies"
+pushd ./libs/kdm-styles
+	if [ -d node_modules ]; then
+		rm -rf node_modules
+	fi
+	npm i
+popd
+
+echo "----> ray: npm link kdm-components"
+npm link ./libs/kdm-components/
+echo "----> ray: npm link kdm-styles"
+npm link ./libs/kdm-styles/
+
+echo "----> ray: running npm run build"
+npm run build
