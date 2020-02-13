@@ -9,7 +9,8 @@ pushd ./libs/kdm-components
 	#npm run-script build
 	# HACK: run in background, then docker will not wait for it
 	# TODO: component should be accessible from parent module
-	npm start &
+	#npm start &
+  npm run build
 popd
 
 echo "----> ray: installing kdm-styles dependencies"
